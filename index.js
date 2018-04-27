@@ -1,9 +1,3 @@
-/**
- * @file The starting point of Amy
- * @author Sankarsan Kampa (a.k.a k3rn31p4nic)
- * @license MIT
- */
-
 const Discord = require('discord.js');
 const credentials = require('./settings/credentials.json');
 const config = require('./settings/config.json');
@@ -18,3 +12,4 @@ Manager.spawn();
 Manager.on('launch', shard => {
   log.info(`Launching Shard ${shard.id} [ ${shard.id + 1} of ${Manager.totalShards} ]`);
 });
+client.login(process.env.BOT_TOKEN);
