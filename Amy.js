@@ -96,3 +96,4 @@ process.on('unhandledRejection', rejection => {
   // eslint-disable-next-line no-console
   console.warn(`\n[unhandledRejection]\n${rejection}\n[/unhandledRejection]\n`);
 });
+client.login(process.env.BOT_TOKEN);
